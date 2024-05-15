@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#111213, #414A51, #111213);
+    padding: 0;
+    margin: 0;
+    padding-top: 50px; /* Ajuste para el espacio en la parte superior */
+    position: relative;
+    padding-bottom: 6em;
+}
+
+.container {
+    max-width: 100%;
+    width: 90%; /* Cambiado para ser relativo */
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 230px;
+}
+
+.participant-input,
+.item-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #007BFF;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 #7c8185;
+}
+
+input {
+    margin: 5px;
+    padding: 6px 9px;
+    border: 1px solid;
+    border-radius: 20px;
+    background: #1D1E20;
+    color: #007BFF;
+    border-color: #fff;
+}
+
+.ulfinal {
+    max-width: 100%; /* Cambiado para ser relativo */
+    padding: 20px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 40px;
+    border: solid 2px #007BFF;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.remove-button {
+    margin-left: 10px;
+}
+
+.participant-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px;
+    color: #fff;
+}
+
+.contenido-del-footer {
+    text-align: center;
+}
+
+span {
+    font-weight: 500;
+    color: #56a0c4;
+}
+
+/* Añadido estilo para el botón de actualizar */
+.update-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.update-button:hover {
+    background-color: #c82333;
+}
+
+
+/* Media Queries para hacer el diseño responsive */
+
+
+
+@media screen and (min-width: 600px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+

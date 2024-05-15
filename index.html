@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team allocator</title>
+    <link rel="shorcut icon" href="/img/pelota.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>ASIGNACIÓN ALEATORIA</h1>
+        <div>
+            <label for="participant">NOMBRES DE LOS PARTICIPANTES</label>
+            <input type="text" id="participant" class="participant-input" placeholder="Nombre del participante" onkeypress="handleKeyPress(event, 'participant')">
+            <button onclick="addParticipant()">AGREGAR</button>
+            <ul id="participant-list"></ul>
+        </div>
+        <div>
+            <label for="item">EQUIPO</label>
+            <input type="text" id="item" class="item-input" placeholder="Equipo a asignar" onkeypress="handleKeyPress(event, 'item')">
+            <button onclick="addItem()">AGREGAR</button>
+            <ul id="item-list"></ul>
+        </div>
+        <button onclick="assignRandomly()">ASIGNAR ALEATORIAMENTE</button>
+        <h2>ASIGNACIÓN</h2>
+        <div class="asignacion-final">
+        <ul class="ulfinal" id="result-list"></ul>
+        <button onclick="location.reload();" class="update-button">
+            <i class="fa-solid fa-arrows-rotate"></i>
+        </button>
+        <footer>
+            <div class="contenido-del-footer">© CREATED BY <SPAn>FAKA</SPAn></div>
+        </footer>
+    </div>
+</body>
+</html>
